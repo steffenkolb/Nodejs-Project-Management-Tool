@@ -1,0 +1,87 @@
+extends layout
+
+block content
+  .row-fluid
+    .span12.page-header
+      h1= title
+  if selectedProject
+    .row-fluid
+      .span12
+        ul.breadcrumb
+          li
+            a(href="/") home
+            span.divider /
+          li
+            a(href="/projects/all") projects
+            span.divider /
+          li
+            a(href="/projects/"+selectedProject)=projects[selectedProject-1].title
+            span.divider /
+          li
+            a(href="/projects/"+selectedProject+"/issues") issues
+            span.divider /
+          li.active.
+            new issue
+  else
+    .row-fluid
+      .span12.nav
+        ul.breadcrumb
+          li
+            a(href="/") home
+            span.divider /
+          li.active.
+            new issue
+  .row-fluid
+    .span6
+      form(method="post")
+        div
+          .control-group
+            label.control-label(for="editIssueTitle") Title:
+            .controls
+              input.input-xxlarge(type="text", name="title", id="editIssueTitle", autofocus, required)
+          .control-group
+            label.control-label(for="editIssueDescription") Description:
+            .controls
+              textarea.input-xxlarge(rows="7", name="description", id="editIssueDescription", required)
+          .control-group
+            label.control-label(for="editIssuePriority") Priority:
+            .controls
+              label.radio.issue
+                input(type="radio", name="priority", id="editIssuePriority1", value="1")
+                span.issue.issue-1 low
+              label.radio.issue
+                input(type="radio", name="priority", id="editIssuePriority2", value="2", checked)
+                span.issue.issue-2 normal
+              label.radio.issue
+                input(type="radio", name="priority", id="editIssuePriority3", value="3")
+                span.issue.issue-3 high
+              label.radio.issue
+                input(type="radio", name="priority", id="editIssuePriority4", value="4")
+                span.issue.issue-4 immediate
+
+          .control-group
+            label.control-label(for="editIssueProject") Project:
+            .controls
+              select.input-xxlarge(name="project", id="editIssueProject", required)
+                if projects.length
+                  each project in projects
+                    option(value=project.id, selected = selectedProject == project.id ? "selected" : undefined)= project.title
+          .control-group
+            label.control-label(for="editIssueDateDue") Date due:
+            .controls
+              input.input-large(type="date", name="date_due", id="editIssueDateDue", required)
+          .control-group
+            label.control-label(for="editIssueUsers") Assign issue to:
+            .controls.input-xxlarge
+              input.input-users(type="text", name="users", id="editIssueUsers")
+          .control-group
+            label.control-label(for="editIssueTimeEstimated") Estimated hours:
+            .controls
+              input.input-large(type="number", name="time_estimated", id="editIssueTimeEstimated")
+          .control-group
+            label.control-label(for="editIssueTimeWorked") Hours already spent on the project:
+            .controls
+              input.input-large(type="number", name="time_worked", id="editIssueTimeWorked")
+          .control-group
+            .controls
+              input.btn.btn-primary(type="submit", value="Send")

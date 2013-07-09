@@ -1,0 +1,34 @@
+extends layout
+
+block content
+	h1= title
+	.row-fluid
+		.span12
+			ul.breadcrumb
+				li
+					a(href="/") home
+					span.divider /
+				li.active.
+					new user
+	.row-fluid
+		.span6
+			form(method="post")
+				div
+					.control-group
+						label.control-label(for="editUserEmail") Email:
+						.controls
+							input.input-xlarge(type="email", name="email", id="editUserEmail")
+					.control-group
+						label.control-label(for="editUserRights") Rights:
+						.controls
+							input.input-xlarge(type="number", name="rights", id="editUserRights", min="1", max="3")
+					.control-group
+						label.control-label(for="editUserPassword") Password:
+						.controls
+							input.input-xlarge(type="password", name="password", id="editUserPassword")
+						label.control-label(for="editUserPassword2") Retype Password:
+						.controls
+							input.input-xlarge(type="password", name="password2", id="editUserPassword2")
+					.control-group
+						.controls
+							input.btn.btn-primary(type="submit", value="Create User")

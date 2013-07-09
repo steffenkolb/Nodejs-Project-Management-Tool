@@ -1,0 +1,44 @@
+extends layout
+
+block content
+  .row-fluid
+    .span12.page-header
+      h1= project.title
+  .row-fluid
+    .span12
+      ul.breadcrumb
+        li
+          a(href="/") home
+          span.divider /
+        li
+          a(href="/projects/all") projects
+          span.divider /
+        li.active= project.title
+  .row-fluid  
+    .span12.nav
+      a.btn(href="/projects/"+project.id+"/issues") Show Issues
+  .row-fluid
+    .span12
+      h2= project.title
+      if project.description
+        p= project.description
+      else
+        P <em>no description</em>
+      small created by #{project.creator}
+    .row-fluid
+      .span12
+        include includes/calendar
+  if milestones.length
+    .row-fluid
+      .span12
+        h4 Milestones
+        each milestone in milestones
+          .span4
+            h5= milestone.title
+            p= milestone.description
+            p Date: #{milestone.date_due}
+            p created: #{milestone.date_created}
+  else
+    .row-fluid
+      .span12.alert.alert-info
+        p No milestones set yet.

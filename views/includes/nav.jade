@@ -1,0 +1,15 @@
+.navbar.navbar-inverse.navbar-fixed-top
+      .navbar-inner
+        .container-fluid
+          nav
+            ul.nav
+              li.active
+                a(href="/") Home
+              li
+                a(href="/projects/all") Projects
+            ul.nav.pull-right
+              li
+                if locals.authenticated
+                  a.btn-logout(href="/logout") Logout
+                else
+                  a.btn-login(href="/login") Login

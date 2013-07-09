@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  .row-fluid
+    .span12.page-header
+      h1 505
+  .row-fluid
+    .span12.nav
+      ul.breadcrumb
+        li
+          a(href="/") home
+          span.divider /
+        li.active.
+          505
+  .row-fluid
+    .span6
+      div.alert.alert-error Error of some magical kind.
+        p= error

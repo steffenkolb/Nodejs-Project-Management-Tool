@@ -1,0 +1,636 @@
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+    padding-top: 40px;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+a.btn-login:link, a.btn-login:visited {
+    color: #5ab45a !important;
+}
+
+a.btn-logout:link, a.btn-logout:visited {
+    color: #2f96b4 !important;
+}
+
+
+/********************
+ * Issues
+ ********************/
+
+.radio.issue {
+    margin-bottom: 15px;
+}
+
+span.issue {
+    color: #ffffff;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+span.issue.issue-1 {
+    background-color: #53b9d7;
+}
+
+span.issue.issue-2 {
+    background-color: #5788cc;
+}
+
+span.issue.issue-3 {
+    background-color: #f9a124;
+}
+
+span.issue.issue-4 {
+    background-color: #d44944;
+}
+
+/********************
+ * TableSort
+ ********************/
+
+.table-indicator {
+    background-image: url("../img/tablesort.png");
+    background-repeat: no-repeat; 
+    background-position: right center;
+}
+
+.table-indicator:hover {
+    background-color: rgb(245, 245, 250);
+}
+
+.table-indicator.sort-desc {
+    background-image: url("../img/tablesort-desc.png");
+    color: rgb(242, 242, 242);
+    background-color: rgb(0, 100, 204);
+}
+
+.table-indicator.sort-asc {
+    background-image: url("../img/tablesort-asc.png");
+    color: rgb(242, 242, 242);
+    background-color: rgb(0, 100, 204);
+}
+
+/********************
+ * Tables
+ ********************/
+
+.table-striped tr:nth-child(odd) > td {
+    background-color: rgb(248, 250, 255);
+}
+
+.table-hovered tr:hover > td {
+    background-color: rgb(245, 245, 250);
+    border-top: 1px solid rgb(200, 200, 210);
+    /*border-bottom: 1px solid rgb(200, 200, 210);*/
+}
+
+tr[onclick] {
+    cursor:pointer;
+}
+
+td[class*="issue-"] {
+}
+
+td[class*="issue-"] a {
+    color: rgb(51, 51, 102);
+}
+
+
+td.issue-1 {
+    background-color: rgba(83, 185, 215, 0.2);
+}
+
+td.issue-2 {
+    background-color: rgba(87, 136, 204, 0.2);
+}
+
+td.issue-3 {
+    background-color: rgba(249, 161, 36, 0.2);
+}
+
+td.issue-4 {
+    background-color: rgba(212, 73, 68, 0.2);
+}
+
+.calendar-wrapper {
+    overflow: scroll;
+}
+
+.table-calendar {
+    line-height: 10px;
+    font-size: 80%;
+    margin-bottom: 20px;
+}
+
+.table-calendar th.th-blank {
+    border: 0 solid transparent;
+}
+
+/*span.th-year:before {
+    content: '(';
+}
+
+span.th-year:after {
+    content: ')';
+}*/
+
+span.th-year {
+    color: #dedede;
+}
+
+.table-calendar tr th, .table-calendar tr td {
+    height: 10px;
+    padding: 3px 8px;
+    border: 1px solid #ddd;
+    border-collapse: separate;
+    line-height: 20px;
+    text-align: left;
+}
+
+
+.table-calendar tr:first-child th:first-child {
+    border: 0 solid black;
+}
+
+.table-calendar tr td.td-day.day-sa, .table-calendar tr td.td-day.day-su {
+    background-color: rgb(248, 250, 255);
+}
+
+.table-calendar tr th.th-day.day-sa, .table-calendar tr th.th-day.day-su {
+    background-color: rgb(240, 243, 248);
+}
+
+.td-designer, .th-designer {
+    width: 150px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.td-day, .th-day {
+    width: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.td-day.cell-calendar-active, .th-day.cell-calendar-active {
+    background-color: rgb(235, 238, 247) !important;
+}
+
+table.table-calendar tr:hover td, table.table-calendar tr:hover th.th-designer {
+    background-color: rgb(235, 238, 247) !important;
+}
+
+
+
+
+/* ==========================================================================
+   Autosuggest
+   ========================================================================== */
+
+ul.as-selections {
+    list-style-type: none;
+    border: 1px solid #ccc;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+
+    -webkit-transition: border linear .2s,box-shadow linear .2s;
+    -moz-transition: border linear .2s,box-shadow linear .2s;
+    -o-transition: border linear .2s,box-shadow linear .2s;
+    transition: border linear .2s,box-shadow linear .2s;
+
+    padding: 4px 0 4px 4px;
+    margin: 0;
+    overflow: auto;
+    background-color: #fff;
+
+
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+input.as-input {
+    box-shadow: none;
+    margin-bottom: 0;
+}
+
+input.as-input:hover, input.as-input:focus, input.as-input:active {
+    box-shadow: none;
+    margin-bottom: 0;
+}
+
+ul.as-selections.loading {
+    background-color: #eee;
+}
+
+ul.as-selections li {
+    float: left;
+    margin: 1px 4px 1px 0;
+}
+
+ul.as-selections li.as-selection-item {
+    color: #2b3840;
+    font-size: 13px;
+    text-shadow: 0 1px 1px #fff;
+    background-color: #ddeefe;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ddeefe), to(#bfe0f1));
+
+    border: 1px solid #acc3ec;
+    border-top-color: #c0d9e9;
+    padding: 2px 7px 2px 10px;
+
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    
+    box-shadow: 0 1px 1px #e4edf2;
+    -webkit-box-shadow: 0 1px 1px #e4edf2;
+    -moz-box-shadow: 0 1px 1px #e4edf2;
+}
+
+ul.as-selections li.as-selection-item:last-child {
+    margin-left: 30px;
+}
+
+ul.as-selections li.as-selection-item a.as-close {
+    float: right;
+    margin: 1px 0 0 7px;
+    padding: 0 2px;
+    cursor: pointer;
+    color: #5491be;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 0 1px 1px #fff;
+    -webkit-transition: color .1s ease-in;
+}
+
+ul.as-selections li.as-selection-item.blur {
+    color: #666666;
+    background-color: #f4f4f4;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f4f4f4), to(#d5d5d5));
+    border-color: #bbb;
+    border-top-color: #ccc;
+    box-shadow: 0 1px 1px #e9e9e9;
+    -webkit-box-shadow: 0 1px 1px #e9e9e9;
+    -moz-box-shadow: 0 1px 1px #e9e9e9;
+}
+
+ul.as-selections li.as-selection-item.blur a.as-close {
+    color: #999;
+}
+
+ul.as-selections li:hover.as-selection-item {
+    color: #2b3840;
+    background-color: #bbd4f1;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#bbd4f1), to(#a3c2e5));
+    border-color: #6da0e0;
+    border-top-color: #8bb7ed;
+}
+
+ul.as-selections li:hover.as-selection-item a.as-close {
+    background-color: #bbd4f1;
+}
+
+ul.as-selections li.as-selection-item.selected {
+    border-color: #1f30e4;
+}
+
+ul.as-selections li.as-selection-item a:hover.as-close {
+    color: #1b3c65;
+}
+
+ul.as-selections li.as-selection-item a:active.as-close {
+    color: #4d70b0;
+}
+
+ul.as-selections li.as-original {
+    margin-left: 0;
+}
+
+ul.as-selections li.as-original input {
+    border: none;
+    outline: none;
+    font-size: 13px;
+    width: 120px;
+    height: 18px;
+    padding-top: 3px;
+}
+
+ul.as-list {
+    position: absolute;
+    list-style-type: none;
+    margin: 2px 0 0 0;
+    padding: 0;
+    font-size: 14px;
+    color: #000;
+    font-family: "Lucida Grande", arial, sans-serif;
+    background-color: #fff;
+    background-color: rgba(255,255,255,0.95);
+    z-index: 2;
+    box-shadow: 0 2px 12px #222;
+    -webkit-box-shadow: 0 2px 12px #222;
+    -moz-box-shadow: 0 2px 12px #222;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+li.as-result-item, li.as-message {
+    margin: 0 0 0 0;
+    padding: 5px 12px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+li:first-child.as-result-item {
+    margin: 0;
+}
+
+li.as-message {
+    margin: 0;
+    cursor: default;
+}
+
+li.as-result-item.active {
+    background-color: #3668d9;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 64%, from(rgb(110, 129, 245)), to(rgb(62, 82, 242)));
+    border-color: #3342e8;
+    color: #fff;
+    text-shadow: 0 1px 2px #122042;
+}
+
+li.as-result-item em { 
+    font-style: normal; 
+    background: #444;  
+    padding: 0 2px;
+    color: #fff;
+}
+
+li.as-result-item.active em { 
+    background: #253f7a;  
+    color: #fff;
+}
+
+/* Webkit Hacks  */
+@media screen and (-webkit-min-device-pixel-ratio:0) {  
+    ul.as-selections {
+        border-top-width: 2px;
+    }
+    ul.as-selections li.as-selection-item {
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+    ul.as-selections li.as-selection-item a.as-close {
+        margin-top: -1px;
+    }
+    ul.as-selections li.as-original input {
+        height: 19px;
+    }
+}
+
+/* Opera Hacks  */
+@media all and (-webkit-min-device-pixel-ratio:10000), not all and (-webkit-min-device-pixel-ratio:0) {
+    ul.as-list {
+        border: 1px solid #888;
+    }
+    ul.as-selections li.as-selection-item a.as-close {
+        margin-left: 4px;
+        margin-top: 0;
+    }
+}
+
+/* IE Hacks  */
+ul.as-list {
+    border: 1px solid #888\9;
+}
+ul.as-selections li.as-selection-item a.as-close {
+    margin-left: 4px\9;
+    margin-top: 0\9;
+}
+
+/* Firefox 3.0 Hacks */
+ul.as-list,  x:-moz-any-link, x:default { 
+    border: 1px solid #888;
+}
+BODY:first-of-type ul.as-list, x:-moz-any-link, x:default { /* Target FF 3.5+ */
+    border: none;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media (max-width: 979px) and (min-width: 768px) {
+    body {
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+    padding-top: 0;
+    }
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

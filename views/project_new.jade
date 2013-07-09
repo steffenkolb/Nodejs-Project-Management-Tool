@@ -1,0 +1,38 @@
+extends layout
+
+block content
+  .row-fluid
+    .span12.page-header
+     h1= title
+  .row-fluid
+    .span12.nav
+      a.btn.btn-inverse(href="/") Back
+  .row-fluid
+    .span6
+      form(method="post")
+        div
+          .control-group
+            label.control-label(for="editProjectTitle") Title:
+            .controls
+              input.input-xxlarge(type="text", name="title", id="editProjectTitle", autofocus, required)
+          .control-group
+            label.control-label(for="editProjectDescription") Description:
+            .controls
+              textarea.input-xxlarge(rows="5", name="description", id="editProjectDescription", required)
+          .control-group
+            label.control-label(for="editProjectDateStart") Project Timeframe:
+            .controls
+              .input-prepend.input-xxlarge
+                span.add-on Start
+                input(type="date", name="date_start", id="editProjectDateStart", required)
+            .controls
+              .input-prepend.input-xxlarge
+                span.add-on End
+                input(type="date", name="date_due", id="editProjectDateDue", required)
+          .control-group
+            label.control-label(for="editProjectClient") Client:
+            .controls
+              input.input-xxlarge(type="text", name="client", id="editProjectClient", required)
+          .control-group
+            .controls
+              input.btn.btn-primary(type="submit", value="Add Project")

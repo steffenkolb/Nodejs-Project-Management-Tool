@@ -1,0 +1,40 @@
+extends layout
+
+block content
+  .row-fluid
+    .span12.page-header
+      h1= title
+  .row-fluid
+    .span12.nav
+      ul.breadcrumb
+        li
+          a(href="/") home
+          span.divider /
+        li.active.
+          new milestone
+  .row-fluid
+    .span6
+      form(method="post")
+        div
+          .control-group
+            label.control-label(for="editMilestoneTitle") Title:
+            .controls
+              input.input-xxlarge(type="text", name="title", id="editMilestoneTitle", autofocus, required)
+          .control-group
+            label.control-label(for="editMilestoneDescription") Description:
+            .controls
+              textarea.input-xxlarge(rows="7", name="description", id="editMilestoneDescription", required)
+          .control-group
+            label.control-label(for="editMilestoneProject") Project:
+            .controls
+              select.input-xxlarge(name="project", id="editMilestoneProject", required)
+                if projects.length
+                  each project in projects
+                    option(value=project.id)= project.title
+          .control-group
+            label.control-label(for="editMilestoneDateDue") Date:
+            .controls
+              input.input-large(type="date", name="date_due", id="editMilestoneDateDue")
+          .control-group
+            .controls
+              input.btn.btn-primary(type="submit", value="Create Milestone")

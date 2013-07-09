@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  .row-fluid
+    .span12.page-header
+      h1= title
+  .row-fluid
+    .span12
+      ul.breadcrumb
+        li
+          a(href="/") home
+          span.divider /
+        li
+          a(href="/issues/all") issues
+          span.divider /
+        li.active= issue.title
+  .row-fluid
+    .span6
+        h2= issue.title
+        p= issue.description
+        p due to #{issue.date_due}
+        p
+          em issue created by #{issue.creator} on #{issue.date_created}

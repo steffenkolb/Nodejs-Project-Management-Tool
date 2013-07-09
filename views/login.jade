@@ -1,0 +1,30 @@
+extends layout
+
+block content
+    .row-fluid
+        .span12.page-header
+            h1= title
+    .row-fluid
+        .span12
+          ul.breadcrumb
+            li
+              a(href="/") home
+              span.divider /
+            li.active.
+              login
+    .row-fluid
+        .span6
+            h4 Please provide your e-mail address and password to log in.
+            form(method="post", action="/login")
+                div
+                    .control-group(class= locals.errorCode==4201 ? "error" : "")
+                        label.control-label(for="editLoginEmail") E-Mail:
+                        .controls
+                            input(type="email", name="email", id="editLoginEmail", autofocus)
+                    .control-group(class= locals.errorCode==4201 ? "error" : "")
+                        label.control-label(for="editLoginPassword") Password:
+                        .controls
+                            input( type="password", name="password", id="editLoginPassword")
+                    .control-group
+                        .controls
+                            input.btn.btn-primary(type="submit", value="Login")

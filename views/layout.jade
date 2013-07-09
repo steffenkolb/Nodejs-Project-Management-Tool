@@ -1,0 +1,40 @@
+doctype
+//if lt IE 7
+  <html class="no-js lt-ie9 lt-ie8 lt-ie7">
+//if IE 7
+  <html class="no-js lt-ie9 lt-ie8">
+//if IE 8
+  <html class="no-js lt-ie9">
+//[if gt IE 8]><!
+html.no-js
+  //<![endif]
+  head
+    include includes/head
+  body
+
+    //- Navigation
+    include includes/nav
+
+    //- Warning
+    if locals.message
+    != locals.message
+
+    //- Content
+    .container-fluid
+      block content
+    //if lt IE 7
+      p.chromeframe
+        | You are using an&nbsp;
+        strong outdated
+        | &nbsp;browser. Please&nbsp;
+        a(href='http://browsehappy.com/') upgrade your browser
+        | &nbsp;or&nbsp;
+        a(href='http://www.google.com/chromeframe/?redirect=true') activate Google Chrome Frame
+        | &nbsp;to improve your experience.
+
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js').
+    script.
+      window.jQuery || document.write('<script src="/js/vendor/jquery-1.9.1.min.js"><\\/script>')
+    script(src='/js/vendor/bootstrap.min.js').
+    script(src='/js/plugins.js').
+    script(src='/js/main.js').

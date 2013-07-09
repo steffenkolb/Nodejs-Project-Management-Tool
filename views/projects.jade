@@ -1,0 +1,32 @@
+extends layout
+
+block content
+  .row-fluid
+    .span12.page-header
+      h1= title
+  .row-fluid
+    .span12
+      ul.breadcrumb
+        li
+          a(href="/") home
+          span.divider /
+        li.active.
+          projects
+  .row-fluid
+    .span12.nav
+      a.btn.btn-primary(href="/projects/new") Create New Project
+  .row-fluid
+    .span12
+        table.table.table-condensed.table-sortable.table-bordered.table-striped.table-hovered
+            thead
+              tr
+                th #
+                th project
+                th description
+            tbody
+              each project in projects
+                tr(onclick="document.location = '/projects/"+project.id+"'")
+                  td= project.id
+                  td
+                    a(href=project.id)=project.title
+                  td= project.description

@@ -1,0 +1,58 @@
+extends layout
+
+block content
+  .row-fluid
+    .span12.page-header
+      h1 Issues
+  .row-fluid
+    .span12
+      ul.breadcrumb
+        li
+          a(href="/") home
+          span.divider /
+        li
+          a(href="/projects/all") projects
+          span.divider /
+        li
+          a(href="/projects/"+project.id)=project.title
+          span.divider /
+        li.active.
+          issues
+  .row-fluid
+    .span12.nav
+      a.btn.btn-primary(href="/projects/"+project.id+"/issues/new") Create New Issue
+  .row-fluid
+    .span12
+        if issues.length
+          table.table.table-condensed.table-bordered.table-striped.table-hovered(id="table-issues")
+            thead
+              tr
+                th #
+                th priority
+                th issue
+                th description
+                th date created
+                th date due
+            tbody
+              each issue in issues
+                tr(onclick="document.location = '/issues/"+issue.id+"'")
+                  td= issue.id
+                  td
+                    case issue.priority
+                      when 1
+                        span.issue.issue-1 low
+                      when 2
+                        span.issue.issue-2 normal
+                      when 3
+                        span.issue.issue-3 high
+                      when 4
+                        span.issue.issue-4 immediate
+                    
+                  td
+                    a(href="/issues/"+issue.id)=issue.title
+                  td= issue.description
+                  td= issue.date_created
+                  td= issue.date_due
+        else
+          div.alert.alert-warning The are <strong>no issues</strong> for this project yet.<br/><a href="/issues/new"> Click here</a> to add some.
+            

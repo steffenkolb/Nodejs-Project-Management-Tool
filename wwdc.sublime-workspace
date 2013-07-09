@@ -1,0 +1,442 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"td",
+				"td-day"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"crea",
+				"creator_id"
+			],
+			[
+				"time",
+				"time_worked"
+			],
+			[
+				"logi",
+				"loginError"
+			],
+			[
+				"ins",
+				"insufficientRights"
+			],
+			[
+				"new",
+				"newEntry"
+			],
+			[
+				"login",
+				"loginRedirect"
+			],
+			[
+				"background",
+				"background-repeat"
+			],
+			[
+				"table",
+				"table-indicator"
+			],
+			[
+				"border",
+				"border-top"
+			],
+			[
+				"pr",
+				"Priority"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"contr",
+				"control-label"
+			],
+			[
+				"control",
+				"control-group"
+			],
+			[
+				"err",
+				"error404"
+			],
+			[
+				"error",
+				"errorhandler"
+			],
+			[
+				"req",
+				"require"
+			],
+			[
+				"color",
+				"background-color"
+			],
+			[
+				"co",
+				"comment"
+			],
+			[
+				"margin-",
+				"margin-bottom"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"video",
+				"video_id"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"backgr",
+				"background-color"
+			],
+			[
+				"connec",
+				"net.connect(port /* [host], [cb] */);"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"selected_items":
+		[
+			[
+				"rena",
+				"File: Rename"
+			],
+			[
+				"packa",
+				"Package Control: List Packages"
+			],
+			[
+				"pacak",
+				"Package Control: Install Package"
+			],
+			[
+				"ren",
+				"File: Rename"
+			],
+			[
+				"du",
+				"File: Duplicate"
+			],
+			[
+				"htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"pacakage",
+				"Package Control: Remove Package"
+			],
+			[
+				"node",
+				"Nodejs::Debug::Run::Current File"
+			],
+			[
+				"jade",
+				"Set Syntax: Jade"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"renam",
+				"File: Rename"
+			],
+			[
+				"wrap",
+				"HTML: Wrap Selection With Tag"
+			],
+			[
+				"browser",
+				"File: Open In Browser - Testing Server"
+			],
+			[
+				"hm",
+				"Set Syntax: HTML"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"paca",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"pacal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 435.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/sk/Dropbox/~dump/~stellar/project-management/views/projects.jade",
+		"/Users/sk/Dropbox/~dump/~stellar/project-management/views/project_issues.jade",
+		"/Users/sk/Dropbox/~dump/~stellar/project-management/views/project_new.jade",
+		"/Users/sk/Dropbox/~dump/~stellar/project-management/views/issue.jade",
+		"/Users/sk/Dropbox/~dump/~stellar/project-management/views/project.jade",
+		"/Users/sk/Dropbox/~dump/~stellar/project-management/views/milestone_new.jade",
+		"/Users/sk/Dropbox/~dump/~stellar/project-management/views/issue_new.jade",
+		"/Users/sk/Dropbox/~dump/~stellar/project-management/views/user_new.jade",
+		"/Users/sk/Dropbox/~dump/~stellar/project-management/package.json",
+		"/Users/sk/Dropbox/~dump/~stellar/project-management/public/js/main.js",
+		"/Users/sk/Dropbox/~dump/~stellar/project-management/routes/index.js",
+		"/Users/sk/Dropbox/~dump/~stellar/project-management/routes/authentication.js",
+		"/Users/sk/Dropbox/~dump/~stellar/project-management/mysqlconnector.js",
+		"/Users/sk/Dropbox/~dump/~stellar/project-management/views/layout.jade",
+		"/Users/sk/Dropbox/~dump/~stellar/project-management/public/css/main.css",
+		"/Users/sk/Dropbox/~dump/~stellar/project-management/views/login.jade",
+		"/Users/sk/Dropbox/~dump/~stellar/project-management/views/includes/nav.jade",
+		"/Users/sk/Dropbox/~dump/~stellar/project-management/views/includes/head.jade",
+		"/Users/sk/Dropbox/~dump/~stellar/project-management/views/404.jade",
+		"/Users/sk/Dropbox/~dump/~stellar/project-management/routes/errorhandler.js",
+		"/Users/sk/Dropbox/~dump/~stellar/project-management/views/500.jade",
+		"/Users/sk/Dropbox/~dump/~stellar/project-management/views/505.jade",
+		"/Users/sk/Dropbox/~dump/~stellar/project-management/public/js/plugins.js",
+		"/Users/sk/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/sk/Library/Application Support/Sublime Text 2/Packages/CSS Color Converter/Default (OSX).sublime-keymap",
+		"/Users/sk/Dropbox/~dump/~stellar/project-management/routes/error-handler.js",
+		"/Users/sk/Dropbox/~dump/~stellar/project-management/routes/error-handling.js",
+		"/Users/sk/Dropbox/~dump/~stellar/project-management/views/index.jade",
+		"/Users/sk/Dropbox/~dump/~stellar/project-management/views/project_new",
+		"/Users/sk/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/sk/Desktop/Rumpelkiste/programming/js/nodejs/project-management/app.js",
+		"/Volumes/Rumpelkiste/steffen/Desktop/Rumpelkiste/01_Programming/07_HTML+JS/04_NodeJS/project-management/package.json",
+		"/Users/sk/Desktop/blubb.html",
+		"/Users/sk/Desktop/Rumpelkiste/programming/js/nodejs/express-server/public/css/main.css",
+		"/Users/sk/Desktop/Rumpelkiste/programming/js/nodejs/express-server/views/layout.jade",
+		"/Users/sk/Desktop/Rumpelkiste/programming/js/nodejs/express-server/views/show_post.jade",
+		"/Users/sk/Desktop/Rumpelkiste/programming/js/nodejs/express-server/articleprovider-mongodb.js",
+		"/Users/sk/Desktop/Rumpelkiste/programming/js/nodejs/express-server/public/js/main.js",
+		"/Users/sk/Library/Application Support/Sublime Text 2/Packages/SideBarEnhancements/Side Bar.sublime-settings",
+		"/Users/sk/Desktop/Rumpelkiste/programming/js/nodejs/express-server/views/login.jade",
+		"/Volumes/020_Benutzer/steffen.kolb/GEHEIM/02_Frameworks/nodejs/express/express-server/views/login.jade",
+		"/Users/sk/Development/stellar - intern/README.txt",
+		"/Users/sk/Downloads/bootstrap/css/bootstrap.css",
+		"/Users/sk/Desktop/Rumpelkiste/programming/js/nodejs/express-server/data/db/journal/j._0",
+		"/Users/sk/Desktop/Rumpelkiste/programming/js/nodejs/express-server/data/db/node-mongo-blog.ns",
+		"/Users/sk/Desktop/Rumpelkiste/programming/js/nodejs/express-server/data/db/node-mongo-blog.0",
+		"/Users/sk/Desktop/Rumpelkiste/programming/js/nodejs/express-server/views/links.jade",
+		"/Users/sk/Downloads/mongodb-osx-x86_64-2.4.3/README",
+		"/Users/sk/Desktop/Rumpelkiste/programming/js/nodejs/express-server/views/site.jade",
+		"/Users/sk/Desktop/Rumpelkiste/programming/js/nodejs/express-server/views/index.jade",
+		"/Users/sk/Sites/stellar/application/controllers/pages.php",
+		"/Users/sk/Desktop/Rumpelkiste/programming/js/nodejs/express-server/server.js",
+		"/Users/sk/Desktop/Rumpelkiste/programming/js/nodejs/express-server/routes.js",
+		"/Users/sk/Desktop/Rumpelkiste/programming/js/nodejs/express-server/router.js",
+		"/Users/sk/Sites/stellar/application/views/templates/header.php",
+		"/Users/sk/Sites/stellar/application/views/templates/footer.php",
+		"/Users/sk/Sites/stellar/application/config/database.php",
+		"/Users/sk/Sites/stellar/application/views/about.php",
+		"/Users/sk/Sites/stellar/application/views/home.php",
+		"/Users/sk/Sites/stellar/application/controllers/page.php",
+		"/Volumes/020_Benutzer/steffen.kolb/GEHEIM/01_HTML-Kurs/workshop.steffenkolb.de:All",
+		"/Users/sk/Desktop/untitled.html",
+		"/Users/sk/Downloads/privatelist.php",
+		"/Volumes/040_PAG/14 MIB/05_prototyping/001_MainApp_OLD (neu NUR per SVN Checkout)/src/de/stellar/mib/components/list/BaseList.as",
+		"/Volumes/040_PAG/14 MIB/05_prototyping/001_MainApp_OLD (neu NUR per SVN Checkout)/src/de/stellar/mib/MainApp.as",
+		"/Volumes/040_PAG/14 MIB/05_prototyping/001_MainApp_OLD (neu NUR per SVN Checkout)/src/de/stellar/mib/interfaces/ExtUI.as",
+		"/Users/sk/Desktop/client.js",
+		"/Users/sk/Desktop/server.js",
+		"/Users/sk/Library/Application Support/Sublime Text 2/Packages/SideBarEnhancements/messages/11.13.2012.1305.0.txt"
+	],
+	"find":
+	{
+		"height": 37.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"td",
+			"225",
+			"210",
+			"Issue",
+			"title",
+			"Title",
+			"issue",
+			"user",
+			"issue",
+			"issues",
+			"user",
+			"User",
+			"user",
+			"moment",
+			"milestones",
+			"Issue",
+			"xxlarge",
+			"form.form-horizontal",
+			"form.",
+			"fixe",
+			"isLoggedIn()",
+			"authen",
+			"login\nlogin",
+			"render",
+			"render\n\nrender",
+			"render",
+			"css",
+			"css\n\ncss\ncss",
+			"background",
+			" td",
+			"tr",
+			"color: white;",
+			"label",
+			"sql",
+			"authentication",
+			"checkAuth",
+			"checkRights",
+			"0",
+			" ",
+			".",
+			";",
+			"var ",
+			"require('mongodb')"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"form"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 114.0
+	},
+	"replace":
+	{
+		"height": 66.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"proe",
+				"project-management/views/projects.jade"
+			],
+			[
+				"iss",
+				"project-management/views/project_issues.jade"
+			],
+			[
+				"main",
+				"project-management/public/css/main.css"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 211.0,
+	"status_bar_visible": true
+}

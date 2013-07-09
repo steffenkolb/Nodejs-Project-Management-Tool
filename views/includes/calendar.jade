@@ -1,0 +1,41 @@
+h4 calendar
+if calendar.numDays > 0
+    - var daysInWeek = ["day-mo", "day-tu", "day-we", "day-th", "day-fr", "day-sa", "day-su"]
+    div.calendar-wrapper
+        table.table-calendar
+            thead
+                tr.calendar-months
+                    th.th-blank
+                    for month in calendar.months
+                        th.th-month(colspan=month.daysInMonth) #{month.month} 
+                            span.th-year=month.year
+                tr
+                    th.th-blank
+                    - for (var k = calendar.firstDay; k < calendar.numDays+calendar.firstDay; ++k ) {
+                    th.th-day(class=daysInWeek[k%7])
+                        if k%7 == 0
+                            | M
+                        if k%7 == 1
+                            | D
+                        if k%7 == 2
+                            | M
+                        if k%7 == 3
+                            | D
+                        if k%7 == 4
+                            | F
+                        if k%7 == 5
+                            | S
+                        if k%7 == 6
+                            | S
+                    - }
+            tbody
+                tr
+                - for (var i = 0; i < 10; ++i) {
+                tr
+                    th.th-designer designer #{i}
+                    - for (var j = 0; j < calendar.numDays; ++j ) {
+                    td.td-day(class= daysInWeek[ (j + calendar.firstDay) % 7])
+                    - }
+                - }
+else
+    .alert.alert-info The timeframe is to short. Better be fast!
