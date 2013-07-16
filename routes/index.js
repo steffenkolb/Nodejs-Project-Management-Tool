@@ -257,6 +257,21 @@ exports.post_newProject = function(req, res) {
 	}
 };
 
+exports.delete_projectWithId = function(req, res) {    
+	if(req.body.projectId) {
+		sql.deleteProjectWithId(callback, req.body.projectId);  
+	}
+	else {
+		req.session.error = 'Deletion failed. Please check if the project exists.';
+		res.redirect('/projects/all');
+	}
+
+	function callback(result) {
+		req.session.success = 'Project successfully deleted.';
+		res.redirect('/projects/all');
+	}
+};
+
 
 /********************
  * ISSUES

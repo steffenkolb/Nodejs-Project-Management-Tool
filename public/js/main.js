@@ -1,3 +1,26 @@
+function showAlertWithText(headline, text, confirmation, callback) {
+    var content = '<div class="alert alert-block alert-error fade in">'
+                +'<h4 class="alert-heading">' + headline + '</h4>'
+                +'<p>' + text + '</p>'
+                +'<p>'
+                +  '<a class="btn btn-danger btn-alert-cancel" href="#">Cancel</a> <a class="btn btn-alert-confirm" href="#">'+ confirmation +'</a>'
+                +'</p>'
+              +'</div>';
+
+    $('#popup-container').html(content);
+    $('#popup-container').fadeIn();
+
+    $('.btn-alert-cancel').click(function(){
+        $('#popup-container').hide();        
+        callback(false);
+    });
+
+    $('.btn-alert-confirm').click(function(){
+        $('#popup-container').hide();
+        callback(true);
+    });
+}
+
 $(function() {
 
     $('.alert-fadeout').delay(5000).fadeOut({
@@ -60,5 +83,24 @@ $(function() {
         searchObjProps: "email",
         selectedValuesProp: "id",
         startText: "search by email"
+    });
+
+/********************
+ * Forms: Confirm Deletion
+ ********************/
+    $("#form-delete-project").submit(function(event){
+        event.stopPropagation();
+        event.preventDefault();
+
+        console.log(event);
+        
+        function callback(result) {
+            console.log(result);
+            console.log(event.target.action);
+            console.log($('form-delete-projectId'));
+        }
+
+        // show popup
+        showAlertWithText("Delete project", "Do you really want to delete this project?", "Delete", callback);
     });
 });

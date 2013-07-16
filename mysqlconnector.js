@@ -78,6 +78,16 @@ exports.getProjectWithId = function(callback, id) {
     });
 };
 
+exports.deleteProjectWithId = function(callback, id) {
+    // execute query
+    connection.query('DELETE FROM projects WHERE id = ' + connection.escape(id), function(err, rows, fields) {
+        if (err) throw err;
+
+        console.log('MYSQL:: result for "deleteProjectWithId": ', rows);
+        callback(rows);
+    });
+};
+
 /********************
  * ISSUES
  ********************/

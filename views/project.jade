@@ -24,6 +24,10 @@ block content
         p= project.description
       else
         P <em>no description</em>
+      span
+        form(method="post", name="deleteProject", id="form-delete-project", action="/projects/delete/")
+          input(type="hidden", name="projectId", id="form-delete-projectId", value=project.id)
+          input.btn.btn-danger.btn-delete(type="submit", value="Send", value="delete")
       small created by #{project.creator}
     .row-fluid
       .span12

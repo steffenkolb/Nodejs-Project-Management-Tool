@@ -89,6 +89,9 @@ app.post('/issues/new', routes.post_newIssue);
 app.post('/users/new', auth.checkLogin, auth.checkRightsAdmin, routes.post_newUser);
 app.post('/milestones/new', auth.checkLogin, auth.checkRightsModerator, routes.post_newMilestone);
 
+// delete
+app.post('/projects/delete/', auth.checkLogin, routes.delete_projectWithId);
+
 
 /********************
  * START SERVER
