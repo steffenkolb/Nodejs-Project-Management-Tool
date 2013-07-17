@@ -15,4 +15,5 @@ But if anyone finds something interesting in the files or has improvements I wou
 
 
 contact:
+Steffen Kolb (student media computer engineering, Germany)
 www.steffenkolb.de
