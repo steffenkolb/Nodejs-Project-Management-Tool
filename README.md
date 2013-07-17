@@ -14,6 +14,6 @@ The github repository is more for synchronising my files on different machines t
 But if anyone finds something interesting in the files or has improvements I would be very happy to know.
 
 
-contact:
+contact information:
 Steffen Kolb (student media computer engineering, Germany)
 www.steffenkolb.de
