@@ -7,11 +7,10 @@ NOTE:
 This project is very much WORK IN PROGRESS.
 
 
-It is a side project for my current internship and is scheduled
-to have a presentable state at the end of september.
+It is a side project for my current internship and is scheduled to have a presentable state at the end of september.
 
 The github repository is more for synchronising my files on different machines then to "show the project".
-But if anyone finds something interesting in the files or has improvements I would be very happy to know.
+This is my first open source project, so feel free to correct me if anything goes wrong - but dont be mean! :)
 
 
 contact information:
